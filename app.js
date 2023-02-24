@@ -4,7 +4,7 @@
 const mobileDropDown = () => {
 
     $(".fa-bars").on("click", () => {
-    $(".mobile-ul-nav").toggleClass("hide");
+    $(".menu-ul-nav").toggleClass("hide");
         console.log("buttonw as clicked")
     });
 }
