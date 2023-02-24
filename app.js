@@ -1,18 +1,21 @@
 
 
+//shows/hides dropdown menu
+const mobileDropDown = () => {
 
-const $mobileDropDown = $(".mobile-ul-nav");
-const $mobileHamburger = $("fa-bars");
+    $(".fa-bars").on("click", () => {
+    $(".mobile-ul-nav").toggleClass("hide");
+        console.log("buttonw as clicked")
+    });
+}
+
 
 
 const $newDiv = $("<div>").text("Hello World!!!");
 
 $( () => {
+    // shows/hides dropdown menu
+    mobileDropDown();
 
-    $(".fa-bars").on("click", () => {
-        $(".mobile-ul-nav").toggleClass("hide");
-        console.log("button was clicked");
-    });
-    $mobileHamburger.remove();
     $("body").append($newDiv);
 })
