@@ -1,0 +1,32 @@
+
+ul {list-style: none;}
+body {
+    width: 85%;
+    margin: 1% auto;
+    background-color: #000000;
+}
+.links {
+    border: solid 1px black;
+    background-color: #555555;
+    margin: 0;
+    
+
+}
+.ul-links {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 5vw;
+    padding: 0;
+}
+.nav-links {
+    border: solid 1px black;
+    background-color: darkslategrey;
+    font-size: 2.5vw;
+}
+.ul-nav {
+    display: flex;
+
+}
+.fa-bars {
+    font-size: 8vw;
+}
