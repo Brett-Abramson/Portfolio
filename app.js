@@ -9,29 +9,7 @@ const mobileDropDown = () => {
     });
 }
 
-// ======= why not working????
-// const displayPage = {
-//     $home: $("#home"),
-//     $bio: $("#bio"),
-//     $resume: $("#resume"),
-//     $projects: $("#projects"),
-//     checkHideClass: (selector) => {
-//         if (selector.hasClass("hide") === true) {
-//             displayPage.$home.toggleClass("hide");
-//             $("#bio").toggleClass("hide");
-//             displayPage.$resume.toggleClass("hide");
-//             displayPage.$projects.toggleClass("hide");
-//             displayPage.console.log(true);
-//         } else {
-//             console.log(false);
-//         }
-//         console.log(selector.get());
-//     },
-//     displayBio: () => {
-//         displayPage.checkHideClass(displayPage.$bio);
-//         console.log("button clicked");
-//     }
-// }
+
 
 
 
@@ -71,10 +49,6 @@ const displayHome = () => {
     console.log("button clicked");
 }
     
-$("#home").toggleClass("hide");
-$("#resume").toggleClass("hide");
-$("#projects").toggleClass("hide");
-$("#bio").toggleClass("hide");
 
 
 
@@ -88,9 +62,37 @@ $( () => {
     mobileDropDown();
 
 
+
+    // displays or hides website depending on "hide" class status
     $("#li-bio-menu").on("click", displayBio);
     $("#li-resume-menu").on("click", displayResume);
     $("#li-projects-menu").on("click", displayProjects)
     $("#li-home-menu").on("click", displayHome);
 
 })
+
+
+
+// ======= why not working???? ==== am i mixing vanilla JS and jQuery?? ====
+// const displayPage = {
+//     $home: $("#home"),
+//     $bio: $("#bio"),
+//     $resume: $("#resume"),
+//     $projects: $("#projects"),
+//     checkHideClass: (selector) => {
+//         if (selector.hasClass("hide") === true) {
+//             displayPage.$home.toggleClass("hide");
+//             $("#bio").toggleClass("hide");
+//             displayPage.$resume.toggleClass("hide");
+//             displayPage.$projects.toggleClass("hide");
+//             displayPage.console.log(true);
+//         } else {
+//             console.log(false);
+//         }
+//         console.log(selector.get());
+//     },
+//     displayBio: () => {
+//         displayPage.checkHideClass(displayPage.$bio);
+//         console.log("button clicked");
+//     }
+// }
