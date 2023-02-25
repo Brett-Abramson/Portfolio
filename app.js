@@ -9,13 +9,22 @@ const mobileDropDown = () => {
     });
 }
 
+const displayBio = () => {
+    $(".home").addClass("hide");
+    // $(".resume").toggleClass("hide");
+    // $(".projects").toggleClass("hide");
+    $(".bio").toggleClass("hide")
+    console.log("button clicked");
+}
 
 
-const $newDiv = $("<div>").text("Hello World!!!");
+
+
 
 $( () => {
     // shows/hides dropdown menu
     mobileDropDown();
 
-    $("body").append($newDiv);
+
+    $("#li-bio-menu").on("click", displayBio);
 })
