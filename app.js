@@ -3,10 +3,10 @@
 //shows/hides dropdown menu
 const mobileDropDown = () => {
 
-    $(".fa-bars").on("click", () => {
+    // $(".fa-bars").on("click", () => {
     $(".menu-ul-nav").toggleClass("hide");
         // console.log("buttonw as clicked")
-    });
+    // });
 }
 
 
@@ -35,18 +35,22 @@ const checkHideClass = (selector) => {
 const displayBio = () => {
     checkHideClass($("#bio"));
     console.log("button clicked");
+    mobileDropDown();
 }
 const displayResume = () => {
     checkHideClass($("#resume"));
     console.log("button clicked");
+    mobileDropDown();
 }
 const displayProjects = () => {
     checkHideClass($("#projects"));
     console.log("button clicked");
+    mobileDropDown();
 }
 const displayHome = () => {
     checkHideClass($("#home"));
     console.log("button clicked");
+    mobileDropDown();
 }
     
 
@@ -59,8 +63,7 @@ $( () => {
 
 
     // shows/hides dropdown menu
-    mobileDropDown();
-
+    $(".fa-bars").on("click", mobileDropDown);
 
 
     // displays or hides website depending on "hide" class status
