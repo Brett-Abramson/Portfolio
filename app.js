@@ -2,16 +2,8 @@
 
 //shows/hides dropdown menu
 const mobileDropDown = () => {
-
-    // $(".fa-bars").on("click", () => {
     $(".menu-ul-nav").toggleClass("hide");
-        // console.log("buttonw as clicked")
-    // });
 }
-
-
-
-
 
 const checkHideClass = (selector) => {
     const $bio = $("#bio");
@@ -30,7 +22,6 @@ const checkHideClass = (selector) => {
         console.log(true);
     };
 }
-
 
 const displayBio = () => {
     checkHideClass($("#bio"));
@@ -64,7 +55,6 @@ $( () => {
 
     // shows/hides dropdown menu
     $(".fa-bars").on("click", mobileDropDown);
-
 
     // displays or hides website depending on "hide" class status
     $("#li-bio-menu").on("click", displayBio);
