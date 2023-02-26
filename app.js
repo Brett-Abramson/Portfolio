@@ -2,7 +2,8 @@
 
 //shows/hides dropdown menu
 const mobileDropDown = () => {
-    $(".menu-ul-nav").toggleClass("hide");
+    // $(".menu-ul-nav").toggleClass("hide");
+    $(".menu-ul-nav").slideToggle();
 }
 
 const checkHideClass = (selector) => {
