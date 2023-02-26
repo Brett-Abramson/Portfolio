@@ -24,27 +24,42 @@ const checkHideClass = (selector) => {
     };
 }
 
-const displayBio = () => {
+const displayBioMobile = () => {
     checkHideClass($("#bio"));
     console.log("button clicked");
     mobileDropDown();
 }
-const displayResume = () => {
+const displayResumeMobile = () => {
     checkHideClass($("#resume"));
     console.log("button clicked");
     mobileDropDown();
 }
-const displayProjects = () => {
+const displayProjectsMobile = () => {
     checkHideClass($("#projects"));
     console.log("button clicked");
     mobileDropDown();
 }
-const displayHome = () => {
+const displayHomeMobile = () => {
     checkHideClass($("#home"));
     console.log("button clicked");
     mobileDropDown();
 }
-    
+const displayBio = () => {
+    checkHideClass($("#bio"));
+    console.log("button clicked");
+}
+const displayResume = () => {
+    checkHideClass($("#resume"));
+    console.log("button clicked");
+}
+const displayProjects = () => {
+    checkHideClass($("#projects"));
+    console.log("button clicked");
+}
+const displayHome = () => {
+    checkHideClass($("#home"));
+    console.log("button clicked");
+}   
 
 
 
@@ -57,11 +72,16 @@ $( () => {
     // shows/hides dropdown menu
     $(".fa-bars").on("click", mobileDropDown);
 
-    // displays or hides website depending on "hide" class status
-    $("#li-bio-dropdown").on("click", displayBio);
-    $("#li-resume-dropdown").on("click", displayResume);
-    $("#li-projects-dropdown").on("click", displayProjects)
-    $("#li-home-dropdown").on("click", displayHome);
+    // mobile: displays or hides website depending on "hide" class status
+    $("#li-bio-dropdown").on("click", displayBioMobile);
+    $("#li-resume-dropdown").on("click", displayResumeMobile);
+    $("#li-projects-dropdown").on("click", displayProjectsMobile)
+    $("#li-home-dropdown").on("click", displayHomeMobile);
+    // desktop: displays or hides website depending on "hide" class status
+    $("#li-bio-menu").on("click", displayBio);
+    $("#li-resume-menu").on("click", displayResume);
+    $("#li-projects-menu").on("click", displayProjects)
+    $("#li-home-menu").on("click", displayHome);
 
 })
 

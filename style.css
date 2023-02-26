@@ -119,6 +119,9 @@ h1 {
     }
 }
 @media(min-width: 881px) {
+    .dropdown-menu {
+        display: none;
+    }
     body {
         background-image: radial-gradient(black, red, blue);
     }
@@ -141,7 +144,7 @@ h1 {
         writing-mode: vertical-lr;
         text-orientation: upright;
     }
-    .dropdown-menu {
+    .top-menuinav {
         display: flex;
         align-content: stretch;
     }
