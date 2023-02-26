@@ -70,8 +70,6 @@ nav {
     display: flex;
     justify-content: flex-end;
     margin: 1% 2%;
-    
-    
 }
 .menu-ul-nav {
     position: absolute;
@@ -115,11 +113,16 @@ h1 {
 .hide {
     display: none;
 }
-
+@media(max-width: 880px) {
+    .top-menu-nav {
+        display: none;
+    }
+}
 @media(min-width: 881px) {
     body {
         background-image: radial-gradient(black, red, blue);
     }
+
     nav {
         position: fixed;
         display: flex;
@@ -128,6 +131,16 @@ h1 {
         height: 100%;
         width: 225px;
     }
+    .nav-header {
+        display: flex;
+        align-content: flex-start;
+        
+    }
+    .title > h2 {
+        color:honeydew;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
     .dropdown-menu {
         display: flex;
         align-content: stretch;
@@ -135,7 +148,7 @@ h1 {
     .menu-ul-nav{
         display: flex;
     }
-    .fa-bars {
+    #hamburger {
         display: none;
     }
 }

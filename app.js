@@ -3,7 +3,7 @@
 //shows/hides dropdown menu
 const mobileDropDown = () => {
     // $(".menu-ul-nav").toggleClass("hide");
-    $(".menu-ul-nav").slideToggle();
+    $("#hamburger-ul").slideToggle();
 }
 
 const checkHideClass = (selector) => {
@@ -58,10 +58,10 @@ $( () => {
     $(".fa-bars").on("click", mobileDropDown);
 
     // displays or hides website depending on "hide" class status
-    $("#li-bio-menu").on("click", displayBio);
-    $("#li-resume-menu").on("click", displayResume);
-    $("#li-projects-menu").on("click", displayProjects)
-    $("#li-home-menu").on("click", displayHome);
+    $("#li-bio-dropdown").on("click", displayBio);
+    $("#li-resume-dropdown").on("click", displayResume);
+    $("#li-projects-dropdown").on("click", displayProjects)
+    $("#li-home-dropdown").on("click", displayHome);
 
 })
 
