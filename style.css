@@ -139,6 +139,7 @@ h1 {
         align-items: stretch;
         height: 100vh;
     }
+    /* SIDEBAR-CONTAINER */
     nav {
 
         /* position: fixed; */
@@ -148,39 +149,10 @@ h1 {
         top: 0;
         left: 0;
         height: 100%;
-        width: 20%;
+        width: 15%;
         background-color: #444444;
     }
-    .right-side {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    #top-header {
-        display: flex;
-    }
-    .top-header {
-        width: 100%;
-        justify-content: flex-end;
-    }
-    .ul-links-list {
-        justify-content: space-around;
-    }
-    .main-container {
-        
-        
-    }
-
-    .nav-header {
-        display: flex;
-        align-content: flex-start;
-        
-    }
-    .title > h2 {
-        color:honeydew;
-        writing-mode: vertical-lr;
-        text-orientation: upright;
-    }
+    /* SIDEBAR-MENU */
     .top-menu-nav {
         display: flex;
         align-content: stretch;
@@ -195,6 +167,46 @@ h1 {
         margin: 0;
         overflow: hidden;
     }
+    /* SIDEBAR-TITLE */
+    .nav-header {
+        display: flex;
+        align-content: flex-start;
+        
+    }
+    .title > h2 {
+        color:honeydew;
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    /* TOP-BAR */
+    #top-header {
+        display: flex;
+    }
+    .top-header {
+        width: 100%;
+        justify-content: flex-end;
+        border: none;
+    }
+    .ul-links-list {
+        justify-content: space-around;
+        font-size: 3vw;
+    }
+    .fa-brands {
+        max-width: 30px;
+    }
+    /* PAGE-CONTENTS */
+    .main-container {
+        
+        
+    }
+
+    
+
     #hamburger {
         display: none;
     }
