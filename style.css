@@ -151,7 +151,7 @@ h1 {
         display: flex;
         flex-direction: column;
         align-items:center;
-        height: 100vh;
+        /* height: 100vh; */
         width: 15%;
         background-color: #444444;
     }
@@ -161,7 +161,8 @@ h1 {
         flex-wrap: wrap;
         align-content: stretch;
         justify-content: space-evenly;
-
+        width: 100%;
+        flex: 2;
     }
     .menu-ul-nav{
         display: flex;
@@ -171,13 +172,11 @@ h1 {
         box-shadow: none;
         padding: 0;
         margin: 0;
-        width: 100%;
-        padding-top: 15vh;
+        /* width: 99%; */
 
     }
     .li-nav {
-        padding: 1em;
-        margin: 1%;
+        padding: .8em;
         /* border: solid 1px white; */
     }
     .divider {
@@ -190,11 +189,21 @@ h1 {
         align-content: flex-start;
         width: 100%;
         border: none;
+        flex: 2;
+        font-size: 1em;
     }
     .title > h2 {
         color:honeydew;
         writing-mode: vertical-lr;
         text-orientation: upright;
+    }
+    .sidebar-top-spacer {
+        padding: 10vh;
+        flex: 1;
+    }
+    .sidebar-bottom-spacer {
+        padding: 10vh;
+        flex: 1;
     }
     /* RIGHT CONTAINER */
     .right-side {
