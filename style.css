@@ -9,6 +9,7 @@ body {
     background-color: #333333;
     box-sizing: border-box; 
     font-family: 'Lato', sans-serif;
+    /* min-height: 100vh; */
 }
 
 /* top Nav Bar */
@@ -26,9 +27,9 @@ body {
     flex-wrap: wrap;
 }
 .ul-links-list {
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 0;
-    margin: 2%;
+    margin: 1%;
     width: 25%;
     display: flex;
     justify-content: space-between;
@@ -42,7 +43,8 @@ body {
 }
 /* navigation bar */
 nav {
-    position: sticky
+    position: sticky;
+    top: 0;
 }
 .nav-header {
     border: solid 1px #666666;
@@ -74,6 +76,7 @@ nav {
 .menu-ul-nav {
     position: absolute;
     display: flex;
+    justify-content:center;
     text-align: end;
     flex-direction: column;
     flex-wrap: wrap;
@@ -116,6 +119,8 @@ h1 {
 .hide {
     display: none;
 }
+  /*  ================================ */
+    /* ===FOR BIGGER SCREENS=== */
 @media(max-width: 880px) {
     .top-menu-nav {
         display: none;
@@ -134,28 +139,29 @@ h1 {
 
     
     body {
-        background-image: radial-gradient(black, red, blue);
+        background-image:linear-gradient(#f1ab41f6 2%, #85d3f7);
         display: flex;
         align-items: stretch;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
     }
     /* SIDEBAR-CONTAINER */
     nav {
-
-        /* position: fixed; */
         display: flex;
         flex-direction: column;
-        justify-content: stretch;
-        top: 0;
-        left: 0;
-        height: 100%;
+        align-items:center;
+        height: 100vh;
         width: 15%;
         background-color: #444444;
     }
     /* SIDEBAR-MENU */
     .top-menu-nav {
         display: flex;
+        flex-wrap: wrap;
         align-content: stretch;
+        justify-content: space-evenly;
+
     }
     .menu-ul-nav{
         display: flex;
@@ -165,19 +171,32 @@ h1 {
         box-shadow: none;
         padding: 0;
         margin: 0;
-        overflow: hidden;
+        width: 100%;
+        padding-top: 15vh;
+
+    }
+    .li-nav {
+        padding: 1em;
+        margin: 1%;
+        /* border: solid 1px white; */
+    }
+    .divider {
+        width: 75%;
+        margin: 0 auto;
     }
     /* SIDEBAR-TITLE */
     .nav-header {
         display: flex;
         align-content: flex-start;
-        
+        width: 100%;
+        border: none;
     }
     .title > h2 {
         color:honeydew;
         writing-mode: vertical-lr;
         text-orientation: upright;
     }
+    /* RIGHT CONTAINER */
     .right-side {
         display: flex;
         flex-direction: column;
@@ -194,7 +213,8 @@ h1 {
     }
     .ul-links-list {
         justify-content: space-around;
-        font-size: 3vw;
+        font-size: 2vw;
+        margin: .2vh;
     }
     .fa-brands {
         max-width: 30px;
