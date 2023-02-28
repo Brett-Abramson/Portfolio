@@ -24,43 +24,53 @@ const checkHideClass = (selector) => {
     };
 }
 
-const displayBioMobile = () => {
-    checkHideClass($("#bio"));
-    console.log("button clicked");
-    mobileDropDown();
-}
-const displayResumeMobile = () => {
-    checkHideClass($("#resume"));
-    console.log("button clicked");
-    mobileDropDown();
-}
-const displayProjectsMobile = () => {
-    checkHideClass($("#projects"));
-    console.log("button clicked");
-    mobileDropDown();
-}
-const displayHomeMobile = () => {
-    checkHideClass($("#home"));
-    console.log("button clicked");
-    mobileDropDown();
-}
-const displayBio = () => {
-    checkHideClass($("#bio"));
-    console.log("button clicked");
-}
-const displayResume = () => {
-    checkHideClass($("#resume"));
-    console.log("button clicked");
-}
-const displayProjects = () => {
-    checkHideClass($("#projects"));
-    console.log("button clicked");
-}
-const displayHome = () => {
-    checkHideClass($("#home"));
-    console.log("button clicked");
-}   
+// const displayBioMobile = () => {
+//     checkHideClass($("#bio"));
+//     console.log("button clicked");
+//     mobileDropDown();
+// }
+// const displayResumeMobile = () => {
+//     checkHideClass($("#resume"));
+//     console.log("button clicked");
+//     mobileDropDown();
+// }
+// const displayProjectsMobile = () => {
+//     checkHideClass($("#projects"));
+//     console.log("button clicked");
+//     mobileDropDown();
+// }
+// const displayHomeMobile = () => {
+//     checkHideClass($("#home"));
+//     console.log("button clicked");
+//     mobileDropDown();
+// }
+// const displayBio = () => {
+//     checkHideClass($("#bio"));
+//     console.log("button clicked");
+// }
+// const displayResume = () => {
+//     checkHideClass($("#resume"));
+//     console.log("button clicked");
+//     $("#header-page-title").append($("<div>")).attr("id","ppagge").text("Resume");
+// }
+// const displayProjects = () => {
+//     checkHideClass($("#projects"));
+//     console.log("button clicked");
+//     $("#header-page-title").append($("<div>")).text("Projects");
+// }
+// const displayHome = () => {
+//     checkHideClass($("#home"));
+//     console.log("button clicked");
+// }   
 
+const display = (btnClicked) => {
+    checkHideClass(btnClicked);
+    console.log(`btnclicked`);
+}
+const displayMobile = (btnClicked) => {
+    mobileDropDown();
+    checkHideClass(btnClicked);
+}
 
 
 
@@ -73,16 +83,20 @@ $( () => {
     $(".fa-bars").on("click", mobileDropDown);
 
     // mobile: displays or hides website depending on "hide" class status
-    $("#li-bio-dropdown").on("click", displayBioMobile);
-    $("#li-resume-dropdown").on("click", displayResumeMobile);
-    $("#li-projects-dropdown").on("click", displayProjectsMobile)
-    $("#li-home-dropdown").on("click", displayHomeMobile);
+    $("#li-bio-dropdown").on("click", () => {display($("#bio"))});
+    $("#li-resume-dropdown").on("click", () => {display($("#resume"))});
+    $("#li-projects-dropdown").on("click", () => {display($("#projects"))});
+    $("#li-home-dropdown").on("click", () => {display($("#home"))});
     // desktop: displays or hides website depending on "hide" class status
-    $("#li-bio-menu").on("click", displayBio);
-    $("#li-resume-menu").on("click", displayResume);
-    $("#li-projects-menu").on("click", displayProjects)
-    $("#li-home-menu").on("click", displayHome);
+    // $("#li-bio-menu").on("click", displayBio);
+    // $("#li-resume-menu").on("click", displayResume);
+    // $("#li-projects-menu").on("click", displayProjects)
+    // $("#li-home-menu").on("click", displayHome);
 
+    $("#li-bio-menu").on("click", () => {display($("#bio"))});
+    $("#li-resume-menu").on("click", () => {display($("#resume"))});
+    $("#li-projects-menu").on("click", () => {display($("#projects"))})
+    $("#li-home-menu").on("click", () => {display($("#home"))});
 })
 
 
