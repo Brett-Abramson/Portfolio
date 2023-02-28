@@ -83,10 +83,10 @@ $( () => {
     $(".fa-bars").on("click", mobileDropDown);
 
     // mobile: displays or hides website depending on "hide" class status
-    $("#li-bio-dropdown").on("click", () => {display($("#bio"))});
-    $("#li-resume-dropdown").on("click", () => {display($("#resume"))});
-    $("#li-projects-dropdown").on("click", () => {display($("#projects"))});
-    $("#li-home-dropdown").on("click", () => {display($("#home"))});
+    $("#li-bio-dropdown").on("click", () => {displayMobile($("#bio"))});
+    $("#li-resume-dropdown").on("click", () => {displayMobile($("#resume"))});
+    $("#li-projects-dropdown").on("click", () => {displayMobile($("#projects"))});
+    $("#li-home-dropdown").on("click", () => {displayMobile($("#home"))});
     // desktop: displays or hides website depending on "hide" class status
     // $("#li-bio-menu").on("click", displayBio);
     // $("#li-resume-menu").on("click", displayResume);
