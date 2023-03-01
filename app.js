@@ -7,11 +7,11 @@ const mobileDropDown = () => {
 }
 
 const checkHideClass = (selector) => {
-    const $bio = $("#bio");
-    const $home = $("#home");
-    const $resume = $("#resume");
-    const $projects = $("#projects");
-    const $mains = [$bio, $home, $resume, $projects];
+    // const $bio = $("#bio");
+    // const $home = $("#home");
+    // const $resume = $("#resume");
+    // const $projects = $("#projects");
+    const $mains = [$("#bio"), $("#home"), $("#resume"), $("#projects")];
     for (let i = 0; i < $mains.length; i++) {
         if ($mains[i].hasClass("hide") !== true) {
             $mains[i].toggleClass("hide");
