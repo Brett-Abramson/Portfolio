@@ -29,6 +29,10 @@ const displayMobile = (btnClicked) => {
     checkHideClass(btnClicked);
 }
 
+const lightMode = (selector) => {
+    $(selector).toggleClass("light-theme")
+    console.log(`btn clicked`);
+}
 
 
 
@@ -49,6 +53,8 @@ $( () => {
     $("#li-resume-menu").on("click", () => {checkHideClass($("#resume"))});
     $("#li-projects-menu").on("click", () => {checkHideClass($("#projects"))})
     $("#li-home-menu").on("click", () => {checkHideClass($("#home"))});
+
+    $(".lightmode-btn").on("click", () => {lightMode($("body"))});
 })
 
 

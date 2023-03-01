@@ -10,6 +10,11 @@ body {
     box-sizing: border-box; 
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
+    color: azure;
+}
+.light-theme {
+    background: azure;
+    color:#222;
 }
 
 /* top Nav Bar */
@@ -39,6 +44,13 @@ body {
     padding: 5%;
     color: azure;
 }
+.fa-solid {
+    /* color: azure; */
+}
+.fa-solid:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+}
 .li-social-links a:hover {
     box-shadow: 1px 1px 5px;
 }
@@ -63,7 +75,7 @@ body {
 }
 .title {
     align-self: center;
-    color: azure;
+    /* color: azure; */
 }
 .title > h2 {
     padding: 0;
@@ -113,10 +125,10 @@ body {
 .right-side {
     display: flex;
     /* justify-content: center; */
-    color: azure;
+    /* color: azure; */
 }
 h1 {
-    color:azure;
+    /* color:azure; */
     text-align: center;
     /* margin: 5% auto; */
 }
