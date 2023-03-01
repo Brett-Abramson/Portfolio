@@ -120,7 +120,7 @@ h1 {
     text-align: center;
     /* margin: 5% auto; */
 }
-.home-p {
+.mainSection-p {
     text-align: center;
     padding: 0 5%;
 }
@@ -156,8 +156,6 @@ h1 {
      .right-side {
         justify-content: center;
     } 
-
-
 }
 @media(min-width: 701px) {
     .dropdown-menu {
