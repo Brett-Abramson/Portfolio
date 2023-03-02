@@ -36,7 +36,7 @@ const lightMode = (selector) => {
     $(".fa-brands").toggleClass("light-theme");
     $(".li-nav").toggleClass("light-theme");
     $(".li-nav a").toggleClass("light-theme");
-    
+    $("nav").toggleClass("light-theme");
     console.log(`btn clicked`);
 }
 
@@ -61,6 +61,7 @@ $( () => {
     $("#li-home-menu").on("click", () => {checkHideClass($("#home"))});
 
     $(".lightmode-btn").on("click", () => {lightMode($("body"))});
+
 })
 
 

@@ -19,7 +19,7 @@ body {
     /* background-color: linear-gradient(#444444, red); */
     background-image: radial-gradient(#444444, #666666);
     margin: 0;
-    padding: 0;
+    padding: .5vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -119,38 +119,60 @@ body {
     /* justify-content: center; */
     /* color: azure; */
 }
+.main-container {
+    margin-top: 10%;
+}
 h1 {
     /* color:azure; */
+    padding: 5%;
     text-align: center;
+    padding-bottom: 10%;
     /* margin: 5% auto; */
 }
 .mainSection-p {
     text-align: center;
     padding: 0 5%;
 }
+#home-1st-p {
+    text-align: left;
+}
+#home-2nd-p {
+    text-align: right;
+}
+
 /* ======= LIGHT THEME ======== */
 .lightmode-btn:hover {
     box-shadow: -2px 2px 4px;
 }
 .light-theme {
-    background: #faedcd;
+    background: #ffffff;
     color:#222;
 }
 .nav-header.light-theme {
-    background-color: #936639;
+    background-color: #ff5858;
 }
 .top-header.light-theme{
-    background-color: #007300;
+    background-color: #38a0a9;
 }
 .fa-brands.light-theme {
-    color: #BB86FC;
+    color: #550eef;
     background-color: #aaaaaa00;
+}
+nav.light-theme {
+    background-color: #8dd6d9;
+}
+.li-nav.light-theme {
+    background-color: #38a0a9;
+}
+.li-nav.light-theme:hover {
+    background-color: #2e777a;
 }
 .li-nav > a.light-theme {
     color: #222;
+    background-color: #38a0a9;
 }
-.hide {
-    display: none;
+.li-nav > a.light-theme:hover {
+    background-color: #2e777a;
 }
   /*  ================================ */
     /* ===FOR BIGGER SCREENS=== */
@@ -159,6 +181,9 @@ h1 {
         display: none;
     }
     #top-header {
+        display: none;
+    }
+    .main-background {
         display: none;
     }
     body {
@@ -178,7 +203,7 @@ h1 {
      .right-side {
         justify-content: center;
     }
-    .fa-moon {
+    .moon-container .fa-moon {
         display: none;
     } 
 }
@@ -239,9 +264,10 @@ h1 {
     }
     .li-nav:hover {
         background-color: #666666;
+        cursor: pointer;
     }
     .divider {
-        width: 75%;
+        width: 60%;
         margin: 0 auto;
     }
     /* SIDEBAR-TITLE */
@@ -273,6 +299,15 @@ h1 {
         /* width: 85%; */
         flex: 7;
     }
+    .fa-moon {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 3%;
+        margin-right: 6%;
+        font-size: 2em;
+        
+    }
     /* TOP-BAR */
     #top-header {
         /* display: flex; */
@@ -301,9 +336,19 @@ h1 {
 
     /* PAGE-CONTENTS */
     .main-container {
-        
-        
+        margin-top: 15%;
     }
+    .home-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-section-p {
+        padding: 2% 15%;
+    }
+    #home-1st-p {
+
+    }
+
 
     
 
@@ -313,6 +358,8 @@ h1 {
 
 }
 
-
+.hide {
+    display: none;
+}
 
 /* seems hide class needs to come after so it is not written over prior...JS reads top to bottom */

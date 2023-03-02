@@ -1,108 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link href="style.css" rel="stylesheet" />
     <script src="app.js"></script>
-    <script src="https://kit.fontawesome.com/dd8b513c4f.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <script
+      src="https://kit.fontawesome.com/dd8b513c4f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav>
-        <header id="top-header-mobile">
-            <section class="top-header">
-                <ul class="ul-links-list">
-                    <li class="li-social-links">
-                        <i class="fa-solid fa-circle-half-stroke lightmode-btn"></i>   
-                    </li>
-                </ul>
-                <ul class="ul-links-list">
-                    <li class="li-social-links">
-                        <a href="https://github.com/Brett-Abramson" id="github-link"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                    <li class="li-social-links">
-                        <a href="https://www.linkedin.com/in/brettmabramson/" id="linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </section>
-        </header>
-        <div class="sidebar-top-spacer"></div>
-        <div class="sidebar-menu-nav">
-            <ul class="menu-ul-nav">
-                <li class="divider"></li>
-                <li class="li-nav" id="li-home-menu" ><a href="#" id="a-home">Home</a></li>
-                <li class="divider"></li>
-                <li class="li-nav" id="li-bio-menu"><a href="#" id="a-bio">Background/Bio</a></li>
-                <li class="divider"></li>
-                <li class="li-nav" id="li-resume-menu"><a href="#" id="a-resume">Resume</a></li>
-                <li class="divider"></li>
-                 <li class="li-nav" id="li-projects-menu"><a href="#" id="a-projects">Projects</a></li>
-                 <li class="divider"></li>
-            </ul>
+      <header id="top-header-mobile">
+        <section class="top-header">
+          <ul class="ul-links-list">
+            <li class="li-social-links">
+              <i class="fa-solid fa-circle-half-stroke lightmode-btn"></i>
+            </li>
+          </ul>
+          <ul class="ul-links-list">
+            <li class="li-social-links">
+              <a
+                target="_blank"
+                href="https://github.com/Brett-Abramson"
+                id="github-link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="li-social-links">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/brettmabramson/"
+                id="linkedin-link"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <div class="sidebar-top-spacer"></div>
+      <div class="sidebar-menu-nav">
+        <ul class="menu-ul-nav">
+          <li class="divider"></li>
+          <li class="li-nav" id="li-home-menu">
+            <a href="#" id="a-home">Home</a>
+          </li>
+          <li class="divider"></li>
+          <li class="li-nav" id="li-bio-menu">
+            <a href="#" id="a-bio">Background/Bio</a>
+          </li>
+          <li class="divider"></li>
+          <li class="li-nav" id="li-resume-menu">
+            <a href="#" id="a-resume">Resume</a>
+          </li>
+          <li class="divider"></li>
+          <li class="li-nav" id="li-projects-menu">
+            <a href="#" id="a-projects">Projects</a>
+          </li>
+          <li class="divider"></li>
+        </ul>
+      </div>
+      <div class="nav-header">
+        <div class="title">
+          <h2>Portfolio</h2>
         </div>
-        <div class="nav-header">
-            <div class="title">
-                <h2>Portfolio</h2>
-            </div>
-            <i class="fa-solid fa-bars" id="hamburger"></i>
-        </div>
-        <div class="sidebar-bottom-spacer">
-            <div class="moon-container">
-                <i class="fa-solid fa-moon lightmode-btn"></i>
-            </div>
-        </div>
-        <div class="dropdown-menu">
-            <ul class="menu-ul-nav hide" id="hamburger-ul">
-                <li class="li-nav" id="li-home-dropdown" ><a href="#" id="a-home">Home</a></li>
-                <li class="divider"></li>
-                <li class="li-nav" id="li-bio-dropdown"><a href="#" id="a-bio">Background/Bio</a></li>
-                <li class="divider"></li>
-                <li class="li-nav" id="li-resume-dropdown"><a href="#" id="a-resume">Resume</a></li>
-                <li class="divider"></li>
-                 <li class="li-nav" id="li-projects-dropdown"><a href="#" id="a-projects">Projects</a></li>
-            </ul>
-        </div>
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+      </div>
+      <div class="sidebar-bottom-spacer"></div>
+      <div class="dropdown-menu">
+        <ul class="menu-ul-nav hide" id="hamburger-ul">
+          <li class="li-nav" id="li-home-dropdown">
+            <a href="#" id="a-home">Home</a>
+          </li>
+          <li class="divider"></li>
+          <li class="li-nav" id="li-bio-dropdown">
+            <a href="#" id="a-bio">Background/Bio</a>
+          </li>
+          <li class="divider"></li>
+          <li class="li-nav" id="li-resume-dropdown">
+            <a href="#" id="a-resume">Resume</a>
+          </li>
+          <li class="divider"></li>
+          <li class="li-nav" id="li-projects-dropdown">
+            <a href="#" id="a-projects">Projects</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="right-side">
-        <header id="top-header">
-            <section class="top-header">
-                <div id="header-page-title">Brett Abramson</div>
-                <ul class="ul-links-list">
-                    <li class="li-social-links">
-                        <a target="_blank" href="https://github.com/Brett-Abramson" id="github-link"><i class="fa-brands fa-github"></i></a>
-                    </li>
-                    <li class="li-social-links">
-                        <a target="_blank" href="https://www.linkedin.com/in/brettmabramson/" id="linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </section>
-        </header>
-        <main class="main-container">
+      <header id="top-header">
+        <section class="top-header">
+          <div id="header-page-title">Brett Abramson</div>
+          <ul class="ul-links-list">
+            <li class="li-social-links">
+              <a
+                target="_blank"
+                href="https://github.com/Brett-Abramson"
+                id="github-link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li class="li-social-links">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/brettmabramson/"
+                id="linkedin-link"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </section>
+      </header>
+      <main class="main-container">
         <section id="home">
-        <h1>Home</h1>
-        <p class="mainSection-p">Welcome!</p>
-        <p class="mainSection-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora sed repudiandae unde laboriosam eaque, quisquam reiciendis hic atque culpa dicta? Placeat, minima beatae? Consectetur cum deleniti provident deserunt impedit?</p>
+          <div class="home-container">
+            <h1 class="section-h1" id="home-h1">Hello There!</h1>
+            <p class="mainSection-p" id="home-1st-p">
+              My name is Brett and I am an aspiring software engineer.
+            </p>
+            <p class="mainSection-p" id="home-2nd-p">
+              You have found my online portfolio. Please take a look around and
+              see what I've been up to!
+            </p>
+          </div>
         </section>
         <section class="hide" id="bio">
-        <h1>About Me</h1>
-        <p class="mainSection-p">Of on affixed civilly moments promise explain fertile in. Assurance advantage belonging happiness departure so of. Now improving and one sincerity intention allowance commanded not. Oh an am frankness be necessary earnestly advantage estimable extensive. Five he wife gone ye. Mrs suffering sportsmen earnestly any. In am do giving to afford parish settle easily garret.</p>
+          <h1 class="section-h1">About Me</h1>
+          <p class="mainSection-p">
+            Of on affixed civilly moments promise explain fertile in. Assurance
+            advantage belonging happiness departure so of. Now improving and one
+            sincerity intention allowance commanded not. Oh an am frankness be
+            necessary earnestly advantage estimable extensive. Five he wife gone
+            ye. Mrs suffering sportsmen earnestly any. In am do giving to afford
+            parish settle easily garret.
+          </p>
         </section>
         <section class="hide" id="resume">
-        <h1>Resume</h1>
-        <p class="mainSection-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore, omnis doloribus eum quidem debitis ratione, adipisci tenetur perspiciatis, nulla asperiores dolore in iste molestiae autem ut dignissimos! Consectetur, perspiciatis?</p>
+          <h1 class="section-h1">Resume</h1>
+          <p class="mainSection-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            tempore, omnis doloribus eum quidem debitis ratione, adipisci
+            tenetur perspiciatis, nulla asperiores dolore in iste molestiae
+            autem ut dignissimos! Consectetur, perspiciatis?
+          </p>
         </section>
         <section class="hide" id="projects">
-        <h1>Projects</h1>
-        <p class="mainSection-p">Was drawing natural fat respect husband. An as noisy an offer drawn blush place. These tried for way joy wrote witty. In mr began music weeks after at begin. Education no dejection so direction pretended household do to. Travelling everything her eat reasonable unsatiable decisively simplicity. Morning request be lasting it fortune demands highest of.</p>
+          <h1 class="section-h1">Projects</h1>
+          <p class="mainSection-p">
+            Was drawing natural fat respect husband. An as noisy an offer drawn
+            blush place. These tried for way joy wrote witty. In mr began music
+            weeks after at begin. Education no dejection so direction pretended
+            household do to. Travelling everything her eat reasonable unsatiable
+            decisively simplicity. Morning request be lasting it fortune demands
+            highest of.
+          </p>
         </section>
-        </main>
+      </main>
     </div>
-</body>
+
+    <div class="moon-container">
+      <i class="fa-solid fa-moon lightmode-btn"></i>
+    </div>
+  </body>
 </html>
