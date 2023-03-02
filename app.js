@@ -37,9 +37,22 @@ const lightMode = (selector) => {
     $(".li-nav").toggleClass("light-theme");
     $(".li-nav a").toggleClass("light-theme");
     $("nav").toggleClass("light-theme");
-    console.log(`btn clicked`);
+    swapImgs();
+    $("#homepage-pic").toggleClass("light-theme");
+    
 }
-
+    const swapImgs = () => {
+        const $imgContainer = $("#homepage-pic");
+        const $lightImage = $("<img>").attr("src","https://i.imgur.com/45gl6jy.jpg");
+        const $darkImage = $("<img>").attr("src","https://i.imgur.com/z4AFBch.jpg");
+        if ($imgContainer.hasClass("light-theme") === false) {
+            $imgContainer.empty()
+                .append($lightImage);
+        } else {
+            $imgContainer.empty()
+            .append($darkImage);
+        }
+    }
 
 
 $( () => {

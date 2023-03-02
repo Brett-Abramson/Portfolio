@@ -127,6 +127,7 @@ h1 {
     padding: 5%;
     text-align: center;
     padding-bottom: 10%;
+    font-family: 'Poppins', sans-serif;
     /* margin: 5% auto; */
 }
 .mainSection-p {
@@ -135,9 +136,11 @@ h1 {
 }
 #home-1st-p {
     text-align: left;
+    padding: 0 5% 5% 5%;
 }
 #home-2nd-p {
     text-align: right;
+    padding-right: 10%;
 }
 
 /* ======= LIGHT THEME ======== */
@@ -169,10 +172,13 @@ nav.light-theme {
 }
 .li-nav > a.light-theme {
     color: #222;
-    background-color: #38a0a9;
+    background-color: transparent;
 }
 .li-nav > a.light-theme:hover {
     background-color: #2e777a;
+}
+#homepage-pic.light-theme {
+    background: transparent;
 }
   /*  ================================ */
     /* ===FOR BIGGER SCREENS=== */
@@ -184,6 +190,9 @@ nav.light-theme {
         display: none;
     }
     .main-background {
+        display: none;
+    }
+    #homepage-pic {
         display: none;
     }
     body {
@@ -235,6 +244,7 @@ nav.light-theme {
         background-color: #424242;
         min-width: 138px;
         max-width: 216px;
+
     }
     /* SIDEBAR-MENU */
     .sidebar-menu-nav {
@@ -341,12 +351,17 @@ nav.light-theme {
     .home-container {
         display: flex;
         flex-direction: column;
+        
+
     }
     .main-section-p {
         padding: 2% 15%;
     }
     #home-1st-p {
 
+    }
+    img {
+        max-width: 100px;
     }
 
 
