@@ -138,13 +138,12 @@ h1 {
 }
 .nav-header.light-theme {
     background-color: #936639;
-    background-image:  ;
 }
 .top-header.light-theme{
-    background-image: radial-gradient(#888888, #aaaaaa);
+    background-color: #007300;
 }
 .fa-brands.light-theme {
-    color: #6619aef6;
+    color: #BB86FC;
     background-color: #aaaaaa00;
 }
 .li-nav > a.light-theme {
@@ -169,7 +168,6 @@ h1 {
     nav {
         display: flex;
         flex-direction: column;
-
     }
     .nav-header {
         flex: 2;
@@ -179,6 +177,9 @@ h1 {
     } 
      .right-side {
         justify-content: center;
+    }
+    .fa-moon {
+        display: none;
     } 
 }
 @media(min-width: 701px) {
@@ -191,7 +192,7 @@ h1 {
 
     
     body {
-        background-image:linear-gradient(#f1ab41f6 2%, #85d3f7);
+        background-color:#222222;
         display: flex;
         align-items: stretch;
         height: 100%;
@@ -206,7 +207,7 @@ h1 {
         /* height: 100vh; */
         /* width: 15%; */
         flex: 1;
-        background-color: #444444;
+        background-color: #424242;
         min-width: 138px;
         max-width: 216px;
     }
@@ -295,6 +296,9 @@ h1 {
     .fa-brands {
         max-width: 30px;
     }
+    
+
+
     /* PAGE-CONTENTS */
     .main-container {
         
