@@ -12,11 +12,6 @@ body {
     min-height: 100vh;
     color: azure;
 }
-.light-theme {
-    background: azure;
-    color:#222;
-}
-
 /* top Nav Bar */
 .top-header {
     /* border: solid 1px #444444; */
@@ -27,7 +22,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: flex-start;
     flex-wrap: wrap;
     /* flex: 1; */
@@ -38,18 +33,15 @@ body {
     margin: 1%;
     width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .fa-brands {
     padding: 5%;
     color: azure;
 }
-.fa-solid {
-    /* color: azure; */
-}
 .fa-solid:hover {
     cursor: pointer;
-    box-shadow: 1px 1px 5px;
+
 }
 .li-social-links a:hover {
     box-shadow: 1px 1px 5px;
@@ -136,8 +128,28 @@ h1 {
     text-align: center;
     padding: 0 5%;
 }
-
-
+/* ======= LIGHT THEME ======== */
+.lightmode-btn:hover {
+    box-shadow: -2px 2px 4px;
+}
+.light-theme {
+    background: #faedcd;
+    color:#222;
+}
+.nav-header.light-theme {
+    background-color: #936639;
+    background-image:  ;
+}
+.top-header.light-theme{
+    background-image: radial-gradient(#888888, #aaaaaa);
+}
+.fa-brands.light-theme {
+    color: #6619aef6;
+    background-color: #aaaaaa00;
+}
+.li-nav > a.light-theme {
+    color: #222;
+}
 .hide {
     display: none;
 }

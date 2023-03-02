@@ -30,7 +30,13 @@ const displayMobile = (btnClicked) => {
 }
 
 const lightMode = (selector) => {
-    $(selector).toggleClass("light-theme")
+    $(selector).toggleClass("light-theme");
+    $(".top-header").toggleClass("light-theme");
+    $(".nav-header").toggleClass("light-theme");
+    $(".fa-brands").toggleClass("light-theme");
+    $(".li-nav").toggleClass("light-theme");
+    $(".li-nav a").toggleClass("light-theme");
+    
     console.log(`btn clicked`);
 }
 
