@@ -272,6 +272,7 @@ nav.light-theme {
   .li-nav {
     box-sizing: border-box;
     padding: 0.8em;
+    width: 100%;
   }
   .li-nav:hover {
     background-color: #666666;
