@@ -7,7 +7,7 @@ My goal primarily was to implement a responsive design. I attempted to achieve t
 
 I also wanted to include three points of interactin for the user. 
 - a dropdown "hamburger" menu in the mobile version
-- a modal model of the different sections of the website
+- a  of the different sections of the website
 - a light and dark mode toggle
 
 The first big challenge I faced was attempting to bring my website from the mobile design to a desktop or laptop version. I no longer wanted a dropdown menu but instead a sidebar navigation. 
