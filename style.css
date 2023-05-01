@@ -2,6 +2,7 @@ ul {
   list-style: none;
   padding: 0;
 }
+/* general styles for <body> */
 body {
   margin: 0 auto;
   background-color: #333333;
@@ -19,9 +20,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
+
+/* Styles for the <ul> in top Nav Bar */
 .ul-links-list {
   font-size: 4vw;
   padding: 0;
@@ -30,6 +33,7 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+/* Font Awesome */
 .fa-brands {
   padding: 5%;
   color: azure;
@@ -37,6 +41,7 @@ body {
 .fa-solid:hover {
   cursor: pointer;
 }
+ 
 .li-social-links a:hover {
   box-shadow: 1px 1px 5px;
 }
@@ -53,15 +58,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
   position: sticky;
   top: 0;
 }
+/* styles for the title in Navigation bar */
 .title {
   align-self: center;
 }
 .title > h2 {
-  padding: 0;
   margin: 0;
 }
 /* ==== Hamburger Menu ==== */
@@ -70,6 +75,7 @@ body {
   justify-content: flex-end;
   margin: 1% 2%;
 }
+/* styles for the <ul> in Hamburger Menu */
 .menu-ul-nav {
   position: absolute;
   display: flex;
@@ -77,17 +83,19 @@ body {
   text-align: end;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-items: flex-end;
   margin: 0 auto;
   background-color: #444444;
   box-shadow: -1vw 2vw 1vw rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   z-index: 1;
 }
+/* styles for the <li> in Hamburger Menu */
 .li-nav {
   padding: 2vw 4vw 2vw 10vw;
   display: block;
 }
+/* styles for the <a> in hamburger menu */
 .li-nav a {
   color: azure;
   text-decoration: none;
